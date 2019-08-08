@@ -1,11 +1,12 @@
+using ShapeWorld.Domain.Interfaces;
+
 namespace ShapeWorld.Domain.Models
 {
 
-  public class Rectangle : Shape2D
+  public class Cube : Square, IThreeD
   {
-    public virtual double Length { get; set; }
+    public double Height { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 
-    public virtual double Width { get; set; }
     public override double Perimeter()
     {
       return 2 * (Length * Width);
@@ -21,7 +22,7 @@ namespace ShapeWorld.Domain.Models
       return Surface() * 10;
     }
     //controllers
-    public Rectangle() : base(4)
+    public Cube()
     {
 
     }

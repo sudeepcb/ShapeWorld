@@ -1,11 +1,11 @@
 namespace ShapeWorld.Domain.Models
 {
-    
-    public class Square : Rectangle
-    {
-      //fields 
-      // properties
-      //methods
+
+  public class Square : Rectangle
+  {
+    //fields 
+    // properties
+    //methods
 
     private double _sameLength;
 
@@ -34,14 +34,15 @@ namespace ShapeWorld.Domain.Models
       }
 
     }
-    
-    
+
+
     public override double Surface()
     {
       return Length * Width;
     }
-    public override double Perimeter(){
-      return 2*(Length * Width);
+    public override double Perimeter()
+    {
+      return 2 * (Length * Width);
       //controllers
     }
   }

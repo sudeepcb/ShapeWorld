@@ -1,7 +1,7 @@
 namespace ShapeWorld.Domain.Models
 {
 
-  public class Rectangle : Shape2D
+  public class Circle : Shape2D
   {
     public virtual double Length { get; set; }
 
@@ -21,7 +21,7 @@ namespace ShapeWorld.Domain.Models
       return Surface() * 10;
     }
     //controllers
-    public Rectangle() : base(4)
+    public Circle() : base(int.MaxValue)
     {
 
     }
